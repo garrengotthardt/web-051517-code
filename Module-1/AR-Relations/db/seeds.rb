@@ -13,7 +13,10 @@ mirna = Student.find_or_create_by(name: "Mirna")
 # johann.students << mirna
 
 # step2
-tony.students << jp
-zach.teachers << ian
-zach.teachers << tony
-johann.students << mirna
+# tony.students << jp
+# zach.teachers << ian
+# zach.teachers << tony
+# johann.students << mirna
+
+# step3
+tony.subjects.create(student: zach, title: "Javascript")

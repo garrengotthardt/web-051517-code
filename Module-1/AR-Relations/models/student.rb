@@ -1,9 +1,9 @@
 class Student < ActiveRecord::Base
   #ASSOCIATIONS
   # belongs_to :teacher
-  has_and_belongs_to_many :teachers
-  # has_many :subjects
-  # has_many :teachers, through: :subjects
+  # has_and_belongs_to_many :teachers
+  has_many :subjects
+  has_many :teachers, through: :subjects
 
   #VALIDATIONS
   validates_presence_of :name
