@@ -8,4 +8,5 @@ mirna = Student.create(name: "Mirna")
 
 tony.students << jp
 zach.teacher = ian
+zach.save
 johann.students << mirna
